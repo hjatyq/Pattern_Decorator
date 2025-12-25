@@ -11,12 +11,10 @@ Le projet est structuré avec Maven et utilise des classes simples pour illustre
 ## 📦 Fonctionnalités
 - Implémentation du **Pattern Décorateur** en Java
 - Possibilité d’**ajouter dynamiquement des décorateurs** à un objet
-- Exemples concrets :
-    - Café simple
-    - Ajouter du lait
-    - Ajouter du noisette
-- Affichage du **coût total** et de la **description complète**
-
+- Implémentation du **Pattern Décorateur** pour des boissons
+- Ajout dynamique de **toppings / ingrédients**
+- Calcul du **prix total** et affichage de la **description complète**
+- Structure extensible : facile d’ajouter de nouvelles boissons ou décorateurs
 ---
 
 ## 💻 Technologies utilisées
@@ -33,14 +31,19 @@ Le projet est structuré avec Maven et utilise des classes simples pour illustre
 git clone https://github.com/hjatyq/Pattern_Decorator.git
 cd Pattern_Decorator
 
+
 🧠 Structure du projet
 src/
- └── main/
-      └── java/
-           └── com/example/
-                 ├── Coffee.java            # Component
-                 ├── SimpleCoffee.java      # ConcreteComponent
-                 ├── CoffeeDecorator.java   # Decorator
-                 ├── MilkDecorator.java     # ConcreteDecorator
-                 ├── SugarDecorator.java    # ConcreteDecorator
-                 └── Main.java              # Classe principale
+ ├── deco/
+ │    ├── Chantilly.java
+ │    ├── Chocolat.java
+ │    ├── DecorateurBoisson.java
+ │    ├── Lait.java
+ │    ├── Noisette.java
+ │    └── Vanille.java
+ ├── produits/
+ │    ├── Boisson.java
+ │    ├── Deca.java
+ │    ├── Espresso.java
+ │    └── Sumatra.java
+ └── Application.java
